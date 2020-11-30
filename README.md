@@ -1,1 +1,2 @@
 # discordgiftscanner
+TO USE:
