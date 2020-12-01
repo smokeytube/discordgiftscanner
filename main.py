@@ -12,9 +12,9 @@ def click(image):
         pyautogui.click()
         time.sleep(0.001)
 
-def imageProcess():
+def imageProcess(image):
         print ("imageProcess")
-        return pyautogui.locateOnScreen('accept.png', region=(400,400,200,600), confidence=0.8)
+        return pyautogui.locateOnScreen(image, region=(400,400,200,600), confidence=0.8)
 
 userw = input("Discord email: ")
 passw = input("Discord password: ")
@@ -41,11 +41,11 @@ time.sleep(5)
 #     time.sleep(1)
 #     x = x-1
 
-accept = 'accept.png'
+accept = 'hello.png'
 
 print ("Scan initiated")
 while True:
-    if imageProcess():
+    if imageProcess(accept):
         click(accept)
         print ("Gift claimed!")
         time.sleep(69420)
